@@ -7,6 +7,7 @@ SHELL ["/bin/bash", "-c"]
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get -y autoremove \
     && apt-get install -y -q --no-install-recommends curl ca-certificates vim git \
+         gnupg2 wget apt-transport-https software-properties-common \
          libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential ffmpeg \
          libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev libpq-dev \
          -o Dpkg::Options::="--force-confold" netcat
