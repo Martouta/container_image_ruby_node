@@ -7,9 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build & Test image
+          name: Build image
           command: |
-            make all
+            make version=test build
+      - run:
+          name: Test image
+          command: |
+            make version=test test
 workflows:
   ci_build:
     jobs:
