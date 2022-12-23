@@ -3,7 +3,8 @@ version: 2.1
 jobs:
   docker-build:
     resource_class: large
-    machine: true
+    machine:
+      image: ubuntu-2004:202201-02
     steps:
       - checkout
       - run:
