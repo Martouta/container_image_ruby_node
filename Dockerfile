@@ -12,7 +12,7 @@ RUN apt-get -y update && apt-get -y upgrade && apt-get -y autoremove \
          libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev libpq-dev \
          -o Dpkg::Options::="--force-confold" netcat
 
-ENV RUBY_VERSION 3.1.2
+ENV RUBY_VERSION 3.2.0
 ENV BUNDLER_VERSION 2.2.33
 ENV RBENV_VERSION $RUBY_VERSION
 
