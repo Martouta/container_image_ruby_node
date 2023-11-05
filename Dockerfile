@@ -1,4 +1,4 @@
-FROM debian:11.7-slim
+FROM debian:11.8-slim
 
 ENV HOME="/root"
 WORKDIR $HOME
