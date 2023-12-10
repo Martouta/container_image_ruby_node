@@ -6,7 +6,7 @@ build: Dockerfile
 test:
 	docker run --rm $(IMAGE_BASE_NAME):$(version) ruby -v | grep 3.2.0
 	docker run --rm $(IMAGE_BASE_NAME):$(version) bundler --version | grep 'Bundler version 2.2.33'
-	docker run --rm $(IMAGE_BASE_NAME):$(version) node -v | grep v18.10.0
+	docker run --rm $(IMAGE_BASE_NAME):$(version) node -v | grep v18.18.2
 	docker run --rm $(IMAGE_BASE_NAME):$(version) yarn --version | grep 1.22
 	docker run --rm $(IMAGE_BASE_NAME):$(version) pwd | grep '/root'
 	docker run --rm $(IMAGE_BASE_NAME):$(version) cat /etc/issue | grep 'Debian GNU/Linux 11'
